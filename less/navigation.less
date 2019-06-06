@@ -6,8 +6,17 @@
     border-bottom: 2px dashed @navigation-border;
     max-width: 1000px;
     margin:auto;
+    @media @mobile{
+        flex-wrap: wrap;
+        h1{
+            padding: 1% 25%;
+        }
+    }
     nav{
         width: 40%;
+        @media @mobile{
+            width: 90%;
+        }
         .flex-box(space-between);
         a{
             font-size: 1.5rem;

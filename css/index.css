@@ -188,10 +188,23 @@ img {
   max-width: 1000px;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar h1 {
+    padding: 1% 25%;
+  }
+}
 .navbar nav {
   width: 40%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 90%;
+  }
 }
 .navbar nav a {
   font-size: 1.5rem;
