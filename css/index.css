@@ -210,6 +210,11 @@ img {
   font-size: 1.5rem;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .navbar nav a {
+    padding: 0.5%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -311,8 +316,11 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 85%;
+    width: 80%;
     margin: 15px auto;
+  }
+  .home .content-pick .destination p {
+    width: 90%;
   }
 }
 .home .content-pick .destination .btn {
