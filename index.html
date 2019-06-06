@@ -10,6 +10,16 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -96,22 +106,13 @@
       <label for="trip"><b>Trip</b></label>
       <input type="text" placeholder="Enter Trip" name="trip" required>
 
-      <button type="submit" class="btn2">Submit</button>
+      <button type="submit" class="btn2" onclick="closeForm()">Submit</button>
       <button type="submit" class="btn2 cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
 
-  <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-      </script>
-
   <footer class="footer">
+    <div></div>
     <p>Copyright Fun Bus 2018</p>
   </footer>
 

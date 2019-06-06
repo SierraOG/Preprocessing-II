@@ -32,7 +32,7 @@
   outline: none;
 }
 
-/* Set a style for the submit/login button */
+/* Set a style for the submit button */
 .form-container .btn2 {
   background-color: #4CAF50;
   color: white;
@@ -59,7 +59,16 @@
   width: 100%;
   border-top: 2px dashed silver;
   background: @sandy-beach;
+  .flex-box(center);
+  align-items: center;
   
+  div {
+    width: 20px;
+    height: 20px;
+    background-color: coral; 
+    animation: square-to-circle 2s 1s infinite alternate; 
+  }
+
   p {
     text-align: center;
     color: @font-color;
