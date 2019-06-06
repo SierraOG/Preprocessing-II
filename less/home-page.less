@@ -3,6 +3,10 @@
     width: 90%;
     margin: 0 5%;
   }
+  @media @tablet{
+    width:90%;
+    margin: 0 5%;
+  }
 
   header{
     img{
@@ -69,6 +73,9 @@
     @media @mobile{
       width:90%;
     }
+    @media @tablet{
+      width:90%;
+    }
 
     img {
       border-radius: 10px;
@@ -81,6 +88,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet{
+      flex-direction: column;
+    }
+
     @media @mobile{
       flex-direction: column;
     }
@@ -88,6 +99,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet{
+        width:90%;
+        margin: 15px auto;
+        p{
+          width:90%;
+        }
+      }
+
       @media @mobile{
         width:80%;
         margin: 15px auto;
@@ -97,11 +117,6 @@
       }
       .btn{
         .button-style();
-        .keyframes(fade-in;{
-          0% { opacity: .3; }
-          100% { opacity: 1; }
-          });
-      
         .animation(fade-in 2s linear infinite alternate)
       }
     }
