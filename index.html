@@ -67,7 +67,7 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn" onclick="openForm()">Sign Me Up!</div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
@@ -81,6 +81,32 @@
       </div>
     </section>
   </div><!-- container -->
+
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Sign Up</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Name</b></label>
+      <input type="password" placeholder="Enter Name" name="name" required>
+  
+      <button type="submit" class="btn2">Submit</button>
+      <button type="submit" class="btn2 cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
