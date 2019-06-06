@@ -229,9 +229,13 @@ img {
   padding: 10px;
   background-color: white;
 }
+.form-container h1 {
+  text-align: center;
+}
 /* Full-width input fields */
 .form-container input[type=text],
-.form-container input[type=name] {
+.form-container input[type=text],
+.form-container input[type=text] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -240,7 +244,8 @@ img {
 }
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus,
-.form-container input[type=name]:focus {
+.form-container input[type=text]:focus,
+.form-container input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
