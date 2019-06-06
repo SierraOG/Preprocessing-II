@@ -177,6 +177,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navbar {
+  width: 100%;
+  padding: 2% 25%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navbar nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar nav a {
+  font-size: 1.5rem;
+  padding: 1%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
